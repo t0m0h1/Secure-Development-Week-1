@@ -16,8 +16,7 @@ class Encryption {
 
     // Method to encrypt data using DES
     public static String encrypt(String plainText, SecretKey secretKey) throws Exception {
-        Cipher cipher = Cipher.getInstance("DES/ECB/PKCS5Padding");
-
+        Cipher cipher = Cipher.getInstance("DES/ECB/PKCS5Padding");  // Create a Cipher instance that will use DES encryption
         cipher.init(Cipher.ENCRYPT_MODE, secretKey);  // Initialize the Cipher in encryption mode with the secret key
         byte[] encryptedBytes = cipher.doFinal(plainText.getBytes("UTF8"));  // Convert the plaintext to bytes and encrypt it
         return Base64.getEncoder().encodeToString(encryptedBytes);  // Encode the encrypted bytes into a Base64 string and return
@@ -98,9 +97,13 @@ class Main {
                 default:  // Invalid input
                     System.out.println("Invalid option! Please try again.");
                     break;
+            
+   
             }
         }
     }
+
+    
 
     // Main method to run the program
     public static void main(String[] args) {
@@ -112,8 +115,3 @@ class Main {
         }
     }
 }
-
-
-
-
-
