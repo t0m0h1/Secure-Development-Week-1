@@ -59,6 +59,7 @@ class Main {
             int choice = scanner.nextInt();  // Read the user's menu choice
             scanner.nextLine();  // Consume newline left after reading integer input
 
+
             switch (choice) {
                 case 1:  // Encryption option
                     System.out.print("Enter the plaintext message to encrypt: ");
@@ -103,7 +104,7 @@ class Main {
         }
     }
 
-    
+
 
     // Main method to run the program
     public static void main(String[] args) {
