@@ -4,6 +4,8 @@
 
 - The code correctly implements DES encryption and decryption using Java OOP principles. It includes the functionality for encrypting and decrypting a message entered.
 
+- Uses inbuilt library which is a good practice.
+
 - Based on the lecture, DES is now condidered to be insecure in comparison to modern encryption standards such as RSA, SHA256 etc as the keys are much smaller.
 
 
@@ -32,4 +34,20 @@
 
 **6. Testing:**
 
-- There are no test cases provided
+- There are no test cases provided currently.
+
+
+**7. Dependencies**
+
+- The dependencies on crypto and java.Base64 are standard and reasonable for encryption tasks such as this one.
+
+- There are no proper external libraries, making the code lightweight but limited in functionality for encryption tasks.
+
+
+**8. Code Duplication**
+
+No significant duplication of code is seen as OOP practices are observed.
+
+**9. Dependencies on External Services**
+
+The code does not depend on any external services, which makes it portable and easy to run locally.
